@@ -1,0 +1,87 @@
+@use "abstracts" as *;
+
+.gradient-emphasis{
+  background: linear-gradient(100deg, $rk-orange, $rk-violet);  /* Apply gradient */
+  background-clip: text;  /* Clip the background to the text */
+  -webkit-background-clip: text;  /* For Safari support */
+  color: transparent !important;  /* Make the text color transparent */
+}
+
+body{
+  background: $rk-light-white;
+}
+
+.page-container{
+  margin: 6vw 0 0 20vw;
+}
+
+h1{
+  font-size: $rk-great-size;
+  color: $rk-light-white;
+  text-wrap: warp;
+}
+
+h2{
+  font-size: $rk-medium-size;
+  color: $rk-faded-gray;
+}
+
+.h3-custom{
+  color: $rk-faded-gray;
+  font-size: $rk-regular-size;
+}
+
+.icon-custom{
+  background-color: $rk-light-white;
+  padding: 0 0.2rem;
+  width: auto;
+  height: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.input-group{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 1rem 0 1rem 0;
+  height: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.input-group input{
+  border: 3px solid $rk-faded-gray;
+  border-radius: 4px;
+  height: auto;
+  font-size: $rk-small-size;
+  background-color: $rk-light-white;
+  margin: auto;
+}
+
+
+.btn-custom{
+  padding: 1.2em;
+  width: 6em;
+  text-align: center;
+  font-family: "Fira Code", serif;
+  color: $rk-cyan;
+  font-size: $rk-regular-size;
+  border: 3px solid $rk-cyan;
+  border-radius: 10px;
+  background-color:$rk-dark-bg;
+  &:hover {
+    background-color: $rk-dark-blue-hover; // x2 - Color en hover
+    cursor: pointer;
+  }
+}
+
+@media (max-width: $max_resolution_width) {
+  .page-container{
+    margin: 10vw 0 0 3rem;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+}
+

@@ -17,4 +17,5 @@ export class WeatherforecastTestService {
   public getWeather(){
     return this.http.get<any>(this.URLbase);
   }
+  
 }

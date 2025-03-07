@@ -1,0 +1,19 @@
+@use "abstracts" as *;
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 20rem;
+  background-color: lightgray;
+  border-radius: 1rem;
+}
+
+input.ng-touched.ng-invalid {
+  border-color: orange;
+}
+
+input.ng-touched.ng-valid {
+    border-color: $rk-faded-gray;
+  }
