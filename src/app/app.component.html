@@ -6,6 +6,19 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<h1>Test web api net</h1>
+
+<ng-template ngFor let-item [ngForOf]="weathers" let-i="index">
+  <div>
+    <div>Date : {{item.date}}</div>
+    <div>Temperature (C): {{item.temperatureC}}</div>
+    <div>Summary : {{item.summary}}</div>
+  </div>
+  <hr>
+</ng-template>
+
+
+
 
 <style>
   :host {
