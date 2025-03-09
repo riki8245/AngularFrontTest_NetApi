@@ -1,0 +1,27 @@
+@use "abstracts" as *;
+
+.filters-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.capsule{
+    border-radius: 3rem;
+    padding: 0.2rem 1rem;
+    width: auto;
+    border: 2px solid $gray-color;
+    cursor: pointer;
+    &:hover{
+        border-color: lightcoral;
+        .icon-close{
+            color: lightcoral;
+        }
+    }
+}
+

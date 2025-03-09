@@ -1,0 +1,26 @@
+@use "abstracts" as *;
+
+
+.sidebar-navigation{
+    background-color: $secondary-color;
+    width: fit-content;
+    height: 100%;
+}
+
+.sidebar-navigation .nav-link{
+    color: $white-color;
+    background-color: $secondary-color;
+    width: auto;
+    &:hover{
+        background-color: $primary-color
+    }
+    &.active-link {
+        background-color: $secondary-hover-color;
+        font-weight: bold;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+    
+
+}

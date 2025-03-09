@@ -1,19 +1,21 @@
-<nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <span class="navbar-brand">
-        <img src="assets/images/cross.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-         Gestión de almacenes Farmacia Inventada
-      </span>
-      @if(username){
-        <div class="dropdown">
-            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                {{username}}
-                <i class="icon-user"></i>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" (click)="logout()"><i class="icon-login icon-login-submit"></i> Cerrar sesión</a></li>
-            </ul>
-        </div>
-      }
-    </div>
-</nav>
+<div class="navbar-custom">
+  <nav class="navbar">
+      <div class="container-fluid">
+        <span class="navbar-brand">
+          <img src="assets/images/cross.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+          Gestión de almacenes Farmacia Inventada
+        </span>
+        @if(username){
+          <div class="dropdown">
+              <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  {{username}}
+                  <i class="icon-user"></i>
+              </button>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" (click)="logout()"><i class="icon-login icon-login-submit"></i> Cerrar sesión</a></li>
+              </ul>
+          </div>
+        }
+      </div>
+  </nav>
+</div>

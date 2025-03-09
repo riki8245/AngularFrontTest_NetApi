@@ -1,4 +1,9 @@
 @use "abstracts" as *;
+
+.navbar-custom{
+  background-color: $primary-faded-color;
+}
+
 .navbar .icon-user{
     text-decoration: none !important;
     color: white;
@@ -11,7 +16,6 @@
 .nav-link {
     color: rgb(58, 58, 58); // x1 - Color base
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
     display: flex;
     align-items: center;
     gap: 0.5rem;

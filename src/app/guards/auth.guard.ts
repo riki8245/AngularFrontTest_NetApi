@@ -8,7 +8,7 @@ export const authGuard: CanActivateFn = (route, state) => {
 
   const token = authService.getToken();
   if (token) {
-    router.navigate(['/articulosext']); // Redirect to a different page if already logged in
+    router.navigate(['/mainpage']); // Redirect to a different page if already logged in
     return false;
   }
   return true;

@@ -2,14 +2,20 @@
 
 .footer-custom {
     position: fixed;
-    bottom: 0;
+    bottom: 6px;
     min-height: 3vh;
     margin: 0;
     width: 100%;
     text-align: center;
-    background-color: transparent;
-    display: flex;
     justify-content: center;
+    display: flex;
+    align-items: center;
     color: $rk-dark-bg;
     font-size: $rk-small-size;
+}
+
+.center-footer{
+    padding: 0.2rem 0.8rem;
+    border-radius: 1rem;
+    background-color: $gray-color;
 }

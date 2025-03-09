@@ -27,23 +27,17 @@ h2{
   color: $rk-faded-gray;
 }
 
-.h3-custom{
-  color: $rk-faded-gray;
-  font-size: $rk-regular-size;
-}
-
 .icon-custom{
-  border: 1px solid $rk-faded-gray;
+  border: 1px solid $gray-color;
   border-left: 0px;
   border-radius: 4px 0 0 4px;
-  background-color: $rk-light-white;
   padding: 0 0.2rem;
   width: auto;
   height: auto;
   align-items: center;
   display: flex;
   justify-content: center;
-  background-color: $rk-faded-gray;
+  background-color: $gray-color;
   color: rgb(66, 64, 64);
 }
 
@@ -61,7 +55,7 @@ h2{
 }
 
 .input-group input{
-  border: 1px solid $rk-faded-gray;
+  border: 1px solid $gray-color;
   border-left: 0px;
   border-radius: 0 4px 4px 0;
   height: auto;
@@ -81,13 +75,13 @@ h2{
   font-size: $rk-small-size;
   border: 3px solid $rk-light-white;
   border-radius: 10px;
-  background-color:$rk-faded-gray;
+  background-color:$primary-color;
   &:hover {
-    background-color: lightblue; // x2 - Color en hover
+    background-color: $primary-faded-color; // x2 - Color en hover
     cursor: pointer;
   }
   &.disabled{
-    background-color: $rk-faded-gray;
+    background-color: $primary-color;
     cursor: not-allowed;
   }
 }

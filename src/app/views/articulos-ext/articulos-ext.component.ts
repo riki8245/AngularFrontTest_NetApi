@@ -11,7 +11,7 @@ import { ArticuloExt, PaginatedList, Proveedor } from '../../models/model-Db';
 })
 export class ArticulosExtComponent {
 
-    private readonly router = inject(Router);
+  private readonly router = inject(Router);
   private dataservice = inject(DataBaseService);
 
   currentPage: number = 1;
@@ -25,7 +25,7 @@ export class ArticulosExtComponent {
   paginatedList: PaginatedList | undefined;
 
   ngOnInit() {
-    this. onGetArticulosExt(this.currentPage);
+    this.onGetArticulosExt(this.currentPage);
   }
 
     constructor() { }
@@ -48,7 +48,7 @@ export class ArticulosExtComponent {
           } else {
             this.pages = new Array(Math.floor(this.TotalItems / this.pageSize) + 1);
           }
-          
+
           for(let i = 0; i < this.pages.length; i++) {
             this.pages[i] = i + 1;
           }
@@ -63,7 +63,12 @@ export class ArticulosExtComponent {
   }
 
   navigateToArticulos(indexArticuloExt?: number) {
-    if(indexArticuloExt) this.router.navigate(['/articulos/' + indexArticuloExt]);
-    else this.router.navigate(['/articulos']);
+    if(indexArticuloExt) this.router.navigate(['/mainpage/articulos/' + indexArticuloExt]);
+    else this.router.navigate(['/mainpage/articulos']);
+  }
+
+  updatePageSize(pgSz: number){
+    this.pageSize = pgSz;
+    this.onGetArticulosExt(1);
   }
 }

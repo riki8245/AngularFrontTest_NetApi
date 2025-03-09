@@ -36,7 +36,7 @@ export class AuthenticateComponent {
   }
 
   navigateToArticuloExt() {
-    this.router.navigate(['/articulosext']);
+    this.router.navigate(['/mainpage']);
   }
 
 }

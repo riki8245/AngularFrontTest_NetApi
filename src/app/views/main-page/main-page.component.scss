@@ -1,0 +1,23 @@
+/* filepath: c:\Users\ricar\Projects\AngularProjects\.NET_plus_AngularTestApp\AngularFront_ApiDotNet_Test\AngularFront\src\app\views\main-page\main-page.component.scss */
+.layout-custom {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.navbar-layout {
+  grid-column: span 2;
+  grid-row: 1;
+}
+
+.sidebar-layout {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.content-layout {
+  grid-column: 2;
+  grid-row: 2;
+  overflow-y: auto; /* Optional: Add vertical scroll if content overflows */
+}
