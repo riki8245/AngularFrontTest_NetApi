@@ -1,19 +1,74 @@
 @use "abstracts" as *;
 
-:host {
+.page-base-layout{
+  margin-top: 10vh;
+  padding: 3rem;
+  width: 100vw;
+  height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: 20vh;
-  width: 20rem;
-  background-color: lightgray;
-  border-radius: 1rem;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-input.ng-touched.ng-invalid {
-  border-color: orange;
+.title-custom{
+  margin: 2rem;
+  height: fit-content;
+  text-align: center;
+  color: $secondary-color;
+}
+
+input.ng-touched.ng-invalid{
+  border-color: rgb(204, 151, 53);
 }
 
 input.ng-touched.ng-valid {
     border-color: $rk-faded-gray;
+}
+
+.center-items-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-custom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  padding: 1rem 3rem;
+  background-color: $rk-light-white;
+  border-radius: 0.3rem;
+  border: 1px solid $rk-faded-gray;
+}
+
+.form-container {
+  text-align: center;
+}
+
+.form-container form {
+  display: inline-block;
+  text-align: left;
+}
+
+.error-message {
+  margin: 0 auto;
+  color: lightcoral;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+form.ng-invalid {
+  .btn-custom{
+    opacity: 0.6;
+    cursor: not-allowed;
+    &:hover {
+      background-color: $rk-faded-gray;
+      opacity: 0.6;
+      cursor: not-allowed;;
+    }
   }
+}
