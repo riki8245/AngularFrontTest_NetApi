@@ -8,5 +8,6 @@ export const routes: Routes = [
   { path: 'auth', component: AuthenticateComponent, canActivate: [authGuard] },
   { path: 'articulosext', component: ArticulosExtComponent },
   { path: 'articulos', component: ArticulosComponent },
+  { path: 'articulos/:id', component: ArticulosComponent },
   { path: '', redirectTo: '/auth', pathMatch: 'full' }, // Default route
 ];

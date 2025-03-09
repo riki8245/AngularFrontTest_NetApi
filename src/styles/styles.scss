@@ -11,8 +11,9 @@ body{
   background: rgb(214, 68, 68); // not changing not even with !important
 }
 
-.page-container{
-  margin: 6vw 0 0 20vw;
+.wrap-page{
+  width: 100%;
+  padding: 4rem;
 }
 
 h1{
@@ -89,6 +90,10 @@ h2{
     background-color: $rk-faded-gray;
     cursor: not-allowed;
   }
+}
+
+.not-selectable-text{
+  user-select: none;
 }
 
 @media (max-width: $max_resolution_width) {

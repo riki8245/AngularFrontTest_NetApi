@@ -1,5 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { AuthService } from '../../services/authentication/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -11,6 +12,7 @@ import { AuthService } from '../../services/authentication/auth.service';
 export class NavbarComponent implements OnInit{
 
   private authService = inject(AuthService);
+  private router = inject(Router);
 
   username: string | null = null;
 
@@ -26,6 +28,11 @@ export class NavbarComponent implements OnInit{
 
   logout() {
     this.authService.logout();
+    this.navigateToAuth();
+  }
+
+  navigateToAuth() {
+    this.router.navigate(['/auth']);
   }
 
 }

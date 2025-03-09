@@ -20,7 +20,7 @@
 }
 
 input.ng-touched.ng-invalid{
-  border-color: rgb(204, 151, 53);
+  border-color: $red-color;
 }
 
 input.ng-touched.ng-valid {
